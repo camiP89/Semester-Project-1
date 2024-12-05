@@ -1,7 +1,7 @@
 # Semester Project 1
 Website created for Semester Project 1.
 
-The Brief
+#The Brief
 An interactive science museum called the Community Science Museum is opening in your town/city. Its core target audience is primary and middle school children (ages 7-15) and families with young children.
 
 The website should be informative and engaging, encouraging viewers to visit the museum. It should also be responsive and easy to use on various devices. Peer/Teacher review is recommended.
