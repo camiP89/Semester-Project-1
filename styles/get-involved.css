@@ -1,0 +1,16 @@
+.heart-hands {
+    height: auto;
+    max-width: 100%;
+    border: 10px solid #ed434c;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.money-jar,
+.volunteer,
+.internship {
+    width: 100%;
+    height: auto;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
