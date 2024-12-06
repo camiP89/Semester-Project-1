@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
-
+    margin: 0 20px;
 }
 
 .world {
@@ -15,6 +15,49 @@
     border-radius: 5px;
 }
 
+.kids-section {
+    border: 10px solid #00a9c2; 
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.teachers-section {
+    border: 10px solid #ed434c; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.researchers-section {
+    border: 10px solid #7cc34a; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.k-p-1,
+.k-p-2,
+.k-p-3,
+.k-p-4,
+.t-p-1,
+.t-p-2,
+.r-p-1,
+.r-p-2 {
+    padding: 30px;
+    margin: 0 10px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
+    border-radius: 5px;
+    margin: 0 0 15px 0;
+}
+
 .star-exhibition,
 .kids-chemistry,
 .mammoth,
@@ -23,10 +66,15 @@
 .kids-experiment,
 .library,
 .researchers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
-    border: 3px solid #000;
+    border: 5px solid #000;
     border-radius: 5px;
+    margin-bottom: 15px;
+
 }
 
 
