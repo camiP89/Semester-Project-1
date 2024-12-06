@@ -1,0 +1,14 @@
+.rocket-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rocket {
+    width: 100%;
+    height: auto;
+    max-width: 685px;
+    border: 10px solid #7cc34a;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
