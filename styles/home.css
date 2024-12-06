@@ -130,6 +130,17 @@
     border: 10px solid #00a9c2; 
 }
 
+.explore-bullets,
+.exhibition-bullets,
+.special-events-bullets,
+.visit-bullets,
+.get-involved-bullets {
+    padding: 30px;
+    margin: 10px;
+    background-color: #F89B1940;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
 
 .color-display {
     width: 100%;

@@ -14,7 +14,10 @@ h1 {
     margin: 20px 0 20px 20px;
 }
 
-h2 {
+h2,
+h3,
+h4,
+h5 {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -133,7 +136,7 @@ nav ul li a.contact {
 nav ul li:hover, 
 nav ul li:checked {
     background-color: #00A9C2;
-    color: #fff;
+    color: #000;
 }
 
 .cta-container {
@@ -224,7 +227,8 @@ footer a:hover,
 footer a:focus {
     text-decoration: underline;
     background-color: #00A9C2;
-    
+    color: #fff;
+    border: 2px solid #000;
 }
 
 @media (min-width: 600px) {
