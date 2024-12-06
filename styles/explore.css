@@ -1,6 +1,31 @@
+.world-container {    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+}
+
 .world {
     width: 100%;
     height: auto;
-    max-width: 860px;
+    max-width: 100%;
     border: 10px solid #7cc34a;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
+
+.star-exhibition,
+.kids-chemistry,
+.mammoth,
+.star-club,
+.school-trip,
+.kids-experiment,
+.library,
+.researchers {
+    width: 100%;
+    height: auto;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+
