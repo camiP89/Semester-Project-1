@@ -5,6 +5,37 @@
     border: 10px solid #f89b19;
     max-width: 100%;
     box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+.welcome {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.welcome-to,
+.new  {
+    display: block;
+}
+
+.come-join-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+    padding: 10px;
+    border: 10px solid #00a9c2;
+    border-radius: 5px;
+}
+
+.come-join {
+    padding: 30px;
+    margin: 10px;
+    background-color: #F89B1940;
+    border: 3px solid #000;
+    border-radius: 5px;
 }
 
 .exhibition-room-container {
@@ -48,6 +79,55 @@
     height: auto;
     border: 10px solid #00a9c2;
     border-radius: 5px;
+}
+
+.the-aim-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+    padding: 10px;
+    border: 10px solid #f89b19;
+    border-radius: 5px;
+}
+
+.the-aim {
+    padding: 30px;
+    margin: 10px;
+    background-color: #F89B1940;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+.explore-container,
+.exhibition-container,
+.special-events-container,
+.visit-container,
+.get-involved-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+
+.explore-container {
+    border: 10px solid #00a9c2; 
+}
+
+.exhibition-container {
+    border: 10px solid #7cc34a;
+}
+
+.special-events-container {
+    border: 10px solid #ed434c;
+}
+
+.visit-container {
+    border: 10px solid #7cc34a;
+}
+
+.get-involved-container {
+    border: 10px solid #00a9c2; 
 }
 
 
