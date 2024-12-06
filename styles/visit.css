@@ -1,0 +1,19 @@
+.museum {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: 10px solid #ed434c;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.map,
+.exhibition-visit,
+.wheelchair,
+.food,
+.shop {
+    width: 100%;
+    height: auto;
+    border: 3px solid #000;
+    border-radius: 5px;
+}

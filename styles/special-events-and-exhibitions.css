@@ -1,14 +1,17 @@
-.rocket-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .rocket {
     width: 100%;
     height: auto;
-    max-width: 685px;
+    max-width: 100%;
     border: 10px solid #7cc34a;
     box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.professor,
+.museum-at-night,
+.energetica-machine {
+    width: 100%;
+    height: auto;
+    border: 3px solid #000;
     border-radius: 5px;
 }
