@@ -220,6 +220,13 @@ footer a {
     padding-bottom: 20px;
 }
 
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+    background-color: #00A9C2;
+    
+}
+
 @media (min-width: 600px) {
     #menu-checkbox,
     .hamburger-icon,
