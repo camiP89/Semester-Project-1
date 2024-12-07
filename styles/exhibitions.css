@@ -3,13 +3,14 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    margin: 0 20px;
 }
 
 .solar-system {
     width: 100%;
     height: auto;
     max-width: 700px;
-    border: 10px solid #7cc34a;
+    border: 10px solid #F89B19;
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -33,3 +34,73 @@
     border-radius: 5px;
 }
 
+.cosmo-container {
+    border: 10px solid #00a9c2; 
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.evolution {
+    border: 10px solid #7cc34a; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.biology {
+    border: 10px solid #F89B19;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.robotics-and-ai {
+    border: 10px solid  #ed434c;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.ecology {
+    border: 10px solid  #7cc34a; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.cosmos-1,
+.cosmos-2,
+.big-dipper-p,
+.evolution-p-1,
+.evolution-p-2,
+.bio-p-1,
+.bio-p-2,
+.bio-p-3,
+.ai-p-1,
+.ai-p-2,
+.eco-p-1,
+.eco-p-2 {
+    padding: 30px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+@media (min-width:600px) {
+    .solar-container {
+        margin: 0 20px;
+    }
+}
+    

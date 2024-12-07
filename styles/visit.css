@@ -17,3 +17,33 @@
     border: 3px solid #000;
     border-radius: 5px;
 }
+
+.location-container {
+    border: 10px solid #7cc34a; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px 10px 10px;
+}
+
+.location-info {
+    padding: 30px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-weight: 600
+}
+
+.map-container {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+.map-container iframe {
+    width: 100%;
+    height: auto;
+}
