@@ -5,6 +5,7 @@
     border: 10px solid #ed434c;
     box-sizing: border-box;
     border-radius: 5px;
+    margin: 20px;
 }
 
 .map,
@@ -20,30 +21,24 @@
 
 .location-container {
     border: 10px solid #7cc34a; 
-    display: flex;
-    flex-direction: column;
-    margin: 20px 20px;
     border-radius: 5px;
-    padding: 10px 20px 10px 10px;
+    padding: 20px;
+    margin: 20px;
 }
 
-.location-info {
-    padding: 30px;
+.location-info-container {
+    padding: 20px;
     background-color: #F89B1940;
     border: 5px solid #000;
     border-radius: 5px;
-    margin: 20px 0;
     font-weight: 600
 }
 
 .map-container {
+
     width: 100%;
     height: auto;
-    max-width: 1000px;
+    max-width: 100%;
     border: 5px solid #000;
     border-radius: 5px;
-}
-.map-container iframe {
-    width: 100%;
-    height: auto;
 }
