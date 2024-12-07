@@ -26,7 +26,8 @@
     margin: 20px;
 }
 
-.location-info-container {
+.location-info-container,
+.free-for-all {
     padding: 20px;
     background-color: #F89B1940;
     border: 5px solid #000;
@@ -47,3 +48,35 @@
     width: 100%;
     height: 300px;
 }
+
+.exhibition-visit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: calc(100% - 40px);
+    border: 10px solid #f89b19;
+    border-radius: 5px;
+}
+
+.admission-container {
+    border: 10px solid #7cc34a; 
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.tour-container {
+    border: 10px solid  #ed434c; 
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.opening-hours {
+    border: 10px solid  #00A9C2; 
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
