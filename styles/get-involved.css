@@ -1,9 +1,40 @@
 .heart-hands {
+    width: 100%;
     height: auto;
     max-width: 100%;
-    border: 10px solid #ed434c;
+    object-fit: cover;
+    border: 10px solid #ed434c; 
     box-sizing: border-box;
     border-radius: 5px;
+    margin: 0px 20px;
+    width: calc(100% - 40px);
+}
+
+.support-container {
+    border: 10px solid #7cc34a; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.volunteer-container {
+    border: 10px solid #ed434c; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.internship-container {
+    border: 10px solid #00a9c2; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 
 .money-jar,
@@ -11,6 +42,17 @@
 .internship {
     width: 100%;
     height: auto;
-    border: 3px solid #000;
+    border: 5px solid #000;
+    border-radius: 5px;
+    width: calc(100% - 10px);
+}
+
+.support-p,
+.volunteer-p,
+.internship-p {
+    padding: 30px;
+    margin: 20px 0px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
     border-radius: 5px;
 }
