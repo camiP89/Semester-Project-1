@@ -9,7 +9,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    background-color:  #F89B19;
+    background: linear-gradient(90deg, #F89B19 15.1%, #FFF 100%);
     border-bottom: 5px solid #000;
     padding: 5px 0 5px 20px;
     margin-top: 0 5px 0 5px;
@@ -152,7 +152,7 @@ nav ul li:checked {
     align-items: center;
     width: 155px;
     height: 33px;
-    background-color: #7CC34A;
+    background-color: #F89B19;
     color: #000;
     text-decoration: none;
     font-size: 1.2rem;
