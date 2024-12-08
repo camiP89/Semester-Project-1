@@ -1,18 +1,18 @@
 body {
     font-family: "Atma", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
 h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
     background-color:  #F89B19;
     border-bottom: 5px solid #000;
-    padding: 15px 0 15px 20px;
-    margin-top: 0;
+    padding: 5px 0 5px 20px;
+    margin-top: 0 5px 0 5px;
 }
 
 h2,
@@ -25,7 +25,7 @@ h5 {
 .free-entry {
     font-size: 1.8rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     color: #ED434C;
     text-align: center;
 }
@@ -244,7 +244,7 @@ footer a:focus {
     margin-top: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 629px) {
     #menu-checkbox,
     .hamburger-icon,
     .mobile-header {
