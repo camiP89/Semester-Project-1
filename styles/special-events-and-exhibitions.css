@@ -2,9 +2,12 @@
     width: 100%;
     height: auto;
     max-width: 100%;
+    object-fit: cover;
     border: 10px solid #7cc34a;
     box-sizing: border-box;
     border-radius: 5px;
+    margin: 0px 20px;
+    width: calc(100% - 40px);
 }
 
 .professor,
@@ -12,6 +15,47 @@
 .energetica-machine {
     width: 100%;
     height: auto;
-    border: 3px solid #000;
+    border: 5px solid #000;
     border-radius: 5px;
+    margin-bottom: 20px;
+    width: calc(100% - 10px);
+}
+
+.professor-container {
+    border: 10px solid #00a9c2; 
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.dates,
+.professor-p,
+.night-museum-p,
+.energetica-p {
+    padding: 30px;
+    margin: 0 10px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
+    border-radius: 5px;
+    margin: 0 0 15px 0;
+}
+
+.night-museum-container {
+    border: 10px solid #ed434c;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px; 
+}
+
+.energetica-container {
+    border: 10px solid #00a9c2; 
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 20px 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
 }

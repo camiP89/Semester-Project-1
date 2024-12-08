@@ -1,22 +1,13 @@
 .museum {
     width: 100%;
-    height: auto;
+    height: 200px;
     max-width: 100%;
+    object-fit: cover;
     border: 10px solid #ed434c;
     box-sizing: border-box;
     border-radius: 5px;
-    margin: 20px;
-}
-
-.map,
-.exhibition-visit,
-.wheelchair,
-.food,
-.shop {
-    width: 100%;
-    height: auto;
-    border: 3px solid #000;
-    border-radius: 5px;
+    margin: 0px 20px;
+    width: calc(100% - 40px);
 }
 
 .location-container {
@@ -36,8 +27,6 @@
 }
 
 .map-container {
-
-    width: 100%;
     height: auto;
     max-width: 100%;
     border: 5px solid #000;
@@ -53,8 +42,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: auto;
     margin: 20px;
-    width: calc(100% - 40px);
+    width: calc(100% - 60px);
     border: 10px solid #f89b19;
     border-radius: 5px;
 }
@@ -73,10 +64,117 @@
     margin: 20px;
 }
 
+.tour-p {
+    padding: 20px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
 .opening-hours {
     border: 10px solid  #00A9C2; 
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+}
+
+.hours {
+    padding: 20px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
+.opening-hours p {
+    margin-bottom:  10px;
+}
+
+.opening-hours span {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.accessibility {
+    border: 10px solid #7cc34a; 
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.wheelchair {
+    width: 100%;
+    height: auto;
+    width: calc(100% - 10px);
+    border: 5px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accessibility-p {
+    padding: 20px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
+.food-and-drink {
+    border: 10px solid #f89b19;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.food {
+    width: 100%;
+    height: auto;
+    width: calc(100% - 10px);
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
+.food-p {
+    padding: 20px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
+.museum-shop {
+    border: 10px solid  #ed434c; 
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.shop {
+    width: 100%;
+    height: auto;
+    border: 5px solid #000;
+    border-radius: 5px;
+    width: calc(100% - 10px);
+}
+
+.shop-p {
+    padding: 20px;
+    background-color: #F89B1940;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
+@media (min-width:600px) {
+    .museum {
+        margin: 0px 50px;
+        width: calc(100% - 100px);
+        height: 300px;
+    }
+}
+
+
+@media (min-width: 875px) {
+    .museum {
+        margin: 0px 150px;
+        width: calc(100% - 300px);
+        height: 400px;
+    }
 }
 
