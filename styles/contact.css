@@ -14,7 +14,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.send-message-container {
+.message-container {
     border: 6px solid #00a9c2;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 169, 194, 0.50) 100%);
     border-radius: 5px;
@@ -60,38 +60,52 @@ textarea {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.send-message-1,
-.send-message-2,
-.send-message-3 {
+.contact-details-container,
+.subject-details-container,
+.send-message-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    max-width: 300px;
     margin: 20px 30px;
     width: calc(100% - 60px);
 }
 
-.message-row {
+.contact-row {
     display: flex;
     flex-direction: column;
 }
 
-
 @media (min-width:600px) {
-    .message-row {
+    .contact-details-container,
+    .subject-details-container,
+    .send-message-container {
+        margin: 20px 100px;
+        width: calc(100% - 200px);
+    }
+    
+    .contact-container {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        flex-wrap: wrap;
     }
 
-    .send-message-1,
-    .send-message-2,
-    .send-message-3 {
-        width: 100%;
-        height: auto;
-
+    .subject-container {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
+@media (min-width:975px) {
+    .contact-details-container,
+    .subject-details-container,
+    .send-message-container {
+        margin: 20px 220px; 
+        width: calc(100% - 440px);
+    }
+
+    .contact-container,
+    .subject-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
