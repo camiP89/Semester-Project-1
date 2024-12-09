@@ -299,9 +299,8 @@
     
     .color-display {
         width: 260px;
-        height: 440px;
+        height: 410px;
         object-fit: cover;
-        margin: 20px;
     }
     
     .row-1 {
@@ -327,12 +326,13 @@
     
     .color-display-container {
         width: 340px;
-        height: 430px;
+        height: 440px;
+        margin-top: 20px;
     }
     
     .color-display {
         width: 330px;
-        height: 430px;
+        height: 450px;
         object-fit: cover;
     }
 
