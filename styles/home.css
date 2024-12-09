@@ -114,6 +114,7 @@
 .get-involved-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 20px 20px;
     padding: 0px 20px;
     border-radius: 5px;
@@ -188,18 +189,20 @@
 .color-display {
     width: 100%;
     height: auto;
-    border: 10px solid #ed434c;
+    border: 10px solid #f89b19;
     margin: 0 30px;
     border-radius: 5px;
 }
 
 .color-display-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 0 30px 20px 30px;
-    max-width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cta-container {
+    margin-top: auto;
 }
 
 @media (min-width:600px) {
@@ -224,13 +227,13 @@
         align-items: center;
         flex-direction: row;
         width: 100%;
-        height: 560px;
     }
 
     .exhibition-room-container,
     .window-display-container,
     .globe-display-container  {
         width: 33%;
+        margin: 20px;
     }
 
     .exhibition-room,
@@ -245,46 +248,98 @@
         margin: 30px 50px;
     }
 
-    .row-1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        width: 100%;
-    }
-
     .explore-container,
     .exhibition-container,
-    .special-events-container {
-        width: 33%;
-        height: 440px;
+    .special-events-container,
+    .visit-container,
+    .get-involved-container {
+        max-width: 200px;
+        display: flex;
+        margin: 0;
     }
 
     .color-display-container {
+        width: 230px;
+        margin: 0;
+    }
+
+    .color-display {
+        width: 230px;
+        height: 440px;
+        object-fit: cover;
+        margin: 0px;
+    }
+
+    .the-containers {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         width: 100%;
-        height: auto;
-        margin: 0 250px 20px 250px;
-        width: calc(100% - 500px);
+        margin: 0 20px 20px 20px;
+        gap: 20px;
+        width: calc(100% - 40px);
     }
 }
 
-@media (min-width:875px) {
+@media (min-width:950px) {
+    .explore-container,
+    .exhibition-container,
+    .special-events-container,
+    .visit-container,
+    .get-involved-container {
+        max-width: 220px;
+        display: flex;
+        margin: 10px;
+    }
+    
+    .color-display-container {
+        width: 260px;
+        margin: 0;
+    }
+    
+    .color-display {
+        width: 260px;
+        height: 440px;
+        object-fit: cover;
+        margin: 20px;
+    }
+    
     .row-1 {
-        margin: 0 50px;
-        width: calc(100% - 100px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
+}
+  
+@media (min-width:1215px) {
+    .explore-container,
+    .exhibition-container,
+    .special-events-container,
+    .visit-container,
+    .get-involved-container {
+        width: 100%;
+        max-width: 320px;
+        height: 450px;
+    }
+    
+    .color-display-container {
+        width: 340px;
+        height: 430px;
+    }
+    
+    .color-display {
+        width: 330px;
+        height: 430px;
+        object-fit: cover;
     }
 
-    .images-row {
-        margin: 50px 100px;
-        width: calc(100% - 200px);
-    }
+    .the-containers {
+        display: flex;
+        align-items: stretch;
 
-    .come-join-container,
-    .the-aim-container {
-        margin: 50px 100px;
-        width: calc(100% - 200px);
     }
+    
 }

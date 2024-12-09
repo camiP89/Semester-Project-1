@@ -76,3 +76,22 @@ textarea {
     flex-direction: column;
 }
 
+
+@media (min-width:600px) {
+    .message-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .send-message-1,
+    .send-message-2,
+    .send-message-3 {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
