@@ -8,6 +8,7 @@
     border-radius: 5px;
     margin: 0px 20px;
     width: calc(100% - 40px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .location-container {
@@ -15,15 +16,18 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .location-info-container,
-.free-for-all {
+.free-for-all,
+.accessibility-p {
     padding: 20px;
-    background-color: #F89B1940;
+    background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
     border: 5px solid #000;
     border-radius: 5px;
-    font-weight: 600
+    font-weight: 600;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .map-container {
@@ -31,6 +35,7 @@
     max-width: 100%;
     border: 5px solid #000;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .map-container iframe {
@@ -48,6 +53,7 @@
     width: calc(100% - 60px);
     border: 10px solid #f89b19;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .admission-container {
@@ -55,6 +61,7 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .tour-container {
@@ -62,13 +69,16 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.tour-p {
+.tour-p,
+.shop-p {
     padding: 20px;
-    background-color: #F89B1940;
+    background: linear-gradient(180deg, rgba(237, 67, 76, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
     border: 5px solid #000;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .opening-hours {
@@ -76,13 +86,15 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .hours {
     padding: 20px;
-    background-color: #F89B1940;
+    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
     border: 5px solid #000;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .opening-hours p {
@@ -99,6 +111,7 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .wheelchair {
@@ -108,13 +121,7 @@
     border: 5px solid #000;
     border-radius: 5px;
     margin-bottom: 10px;
-}
-
-.accessibility-p {
-    padding: 20px;
-    background-color: #F89B1940;
-    border: 5px solid #000;
-    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .food-and-drink {
@@ -122,6 +129,7 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .food {
@@ -130,13 +138,15 @@
     width: calc(100% - 10px);
     border: 5px solid #000;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .food-p {
     padding: 20px;
-    background-color: #F89B1940;
+    background: linear-gradient(180deg, rgba(248, 155, 25, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
     border: 5px solid #000;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .museum-shop {
@@ -144,6 +154,7 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .shop {
@@ -152,13 +163,7 @@
     border: 5px solid #000;
     border-radius: 5px;
     width: calc(100% - 10px);
-}
-
-.shop-p {
-    padding: 20px;
-    background-color: #F89B1940;
-    border: 5px solid #000;
-    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width:600px) {

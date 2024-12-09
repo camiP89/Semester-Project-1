@@ -47,12 +47,27 @@
     width: calc(100% - 10px);
 }
 
-.support-p,
-.volunteer-p,
+.support-p {
+    background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    padding: 30px;
+    margin: 20px 0px;
+    border: 5px solid #000;
+    border-radius: 5px;
+
+}
+
+.volunteer-p {
+    background: linear-gradient(180deg, rgba(237, 67, 76, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    padding: 30px;
+    margin: 20px 0px;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
 .internship-p {
     padding: 30px;
     margin: 20px 0px;
-    background-color: #F89B1940;
+    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
     border: 5px solid #000;
     border-radius: 5px;
 }
