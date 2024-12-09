@@ -125,18 +125,19 @@ nav ul li a.get-involved {
     color: #ED434C;
 }
 
-nav ul li a.tour-guide {
+nav ul li a.contact {
     color: #7CC34A;
 }
 
-nav ul li a.contact {
+
+nav ul li a.tour-guide {
     color: #F89B19;
 }
 
 nav ul li:hover, 
 nav ul li:checked {
     background-color: #00A9C2;
-    color: #000;
+    color: #fff;
 }
 
 .cta-container {
@@ -235,6 +236,34 @@ footer a:focus {
     background-color: #00A9C2;
     color: #fff;
     border: 2px solid #000;
+}
+
+.explore {
+    color: #F89B19;
+}
+
+.exhibitions {
+    color: #ED434C;
+}
+
+.special-events-and-exhibitions {
+    color: #7CC34A;
+}
+
+.visit {
+    color: #F89B19;
+}
+
+.get-involved {
+    color: #ED434C;
+}
+
+.contact {
+    color: #7CC34A;
+}
+
+.terms-and-conditions {
+    color: #F89B19;
 }
 
 .copyright {
