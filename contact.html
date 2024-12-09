@@ -44,75 +44,77 @@
     </header>
     <main>
         <h1>contact us</h1>
-        <section class="send-message">
-            <form action="../pages/contact-success.html" class="form">
-                <fieldset class="contact-container">
-                    <legend class="container-name">Contact Information</legend>
-                    <div class="input-box">
-                        <label for="Full Name">Full Name:</label>
-                        <input type="text" id="full-name" placeholder="Enter full name">
-                    </div>
-                    <div class="input-box">
-                        <label for="Email Address">Email Address:</label>
-                        <input type="email" id="email" placeholder="Enter email address">
-                    </div>
-                    <div class="input-box">
-                        <label for="Contact Number">Contact Number</label>
-                        <input type="tel" id="contact-number" placeholder="Enter Contact Number">
-                    </div>
-                </fieldset>
-            </form>
-        </section>
-        <section class="send-message">
-            <form action="../pages/contact-success.html" class="form">
-                <fieldset class="subject-container">
-                    <legend class="container-name">Subject</legend>
-                    <div class="input-box">
-                        <input type="radio" id="tour-guide"
-                        name="subject" value="tour-guide"/>
-                        <label for="tour-guide">Tour Guide</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="radio" id="donations"
-                        name="subject" value="donations"/>
-                        <label for="donations">Donations</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="radio" id="volunteer"
-                        name="subject" value="volunteer"/>
-                        <label for="volunteer">Volunteer</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="radio" id="internship"
-                        name="subject" value="internship"/>
-                        <label for="internship">Internship</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="radio" id="holiday-club"
-                        name="subject" value="holiday-club"/>
-                        <label for="holiday-club">Holiday Club</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="radio" id="young-stars"
-                        name="subject" value="young-stars"/>
-                        <label for="young-stars">Young Stars</label>
-                    </div>
-                </fieldset>
-            </form>
-        </section>
-        <section class="send-message">
-            <form action="../pages/contact-success.html" class="form">
-                <fieldset class="message-container">
-                    <legend class="container-name">Message</legend>
-                    <div class="input-box">
-                        <textarea id="message"></textarea>
-                    </div>
-                </fieldset>
-            </form>
-        </section>
+        <div class="message-row">
+            <section class="send-message-1">
+                <form action="../pages/contact-success.html" class="form">
+                    <fieldset class="contact-container">
+                        <legend class="container-name">Contact Information</legend>
+                        <div class="input-box">
+                            <label for="Full Name">Full Name:</label>
+                            <input type="text" id="full-name" placeholder="Enter full name">
+                        </div>
+                        <div class="input-box">
+                            <label for="Email Address">Email Address:</label>
+                            <input type="email" id="email" placeholder="Enter email address">
+                        </div>
+                        <div class="input-box">
+                            <label for="Contact Number">Contact Number</label>
+                            <input type="tel" id="contact-number" placeholder="Enter Contact Number">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="send-message-2">
+                <form action="../pages/contact-success.html" class="form">
+                    <fieldset class="subject-container">
+                        <legend class="container-name">Subject</legend>
+                        <div class="input-box">
+                            <input type="radio" id="tour-guide"
+                            name="subject" value="tour-guide"/>
+                            <label for="tour-guide">Tour Guide</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="radio" id="donations"
+                            name="subject" value="donations"/>
+                            <label for="donations">Donations</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="radio" id="volunteer"
+                            name="subject" value="volunteer"/>
+                            <label for="volunteer">Volunteer</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="radio" id="internship"
+                            name="subject" value="internship"/>
+                            <label for="internship">Internship</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="radio" id="holiday-club"
+                            name="subject" value="holiday-club"/>
+                            <label for="holiday-club">Holiday Club</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="radio" id="young-stars"
+                            name="subject" value="young-stars"/>
+                            <label for="young-stars">Young Stars</label>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="send-message-3">
+                <form action="../pages/contact-success.html" class="form">
+                    <fieldset class="send-message-container">
+                        <legend class="container-name">Message</legend>
+                        <div class="input-box">
+                            <textarea id="message"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
         <div class="cta-container">
             <a class="cta" href="../pages/contact-success.html">Send Message</a>
-       </div>
+        </div>
     </main>
     <footer>
         <div class="logo-container-footer">
