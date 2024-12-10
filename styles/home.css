@@ -190,8 +190,10 @@
     width: 100%;
     height: auto;
     border: 10px solid #f89b19;
-    margin: 0 30px;
     border-radius: 5px;
+    margin: 20px 20px;
+    width: calc(100% - 60px);
+
 }
 
 .color-display-container {
@@ -332,7 +334,6 @@
     
     .color-display {
         width: 330px;
-        height: 450px;
         object-fit: cover;
     }
 
