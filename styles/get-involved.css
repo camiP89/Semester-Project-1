@@ -1,13 +1,13 @@
 .heart-hands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
+    max-width: 600px;
     border: 10px solid #ed434c; 
-    box-sizing: border-box;
     border-radius: 5px;
     margin: 0px 20px;
-    width: calc(100% - 40px);
+    width: calc(100% - 60px);
 }
 
 .support-container {
@@ -70,4 +70,128 @@
     background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
     border: 5px solid #000;
     border-radius: 5px;
+}
+
+@media (min-width:600px) {
+    .heart-hands {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+        max-width: 700pxpx;
+    }
+}
+
+@media (min-width:875px) {
+    .support-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        margin: 50px;
+    }
+
+    .money-jar {
+        grid-column: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    .support-p {
+        grid-column: 2;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .cta-container {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .volunteer-container {
+        padding: 30px;
+        margin: 50px;
+    }
+
+    .internship-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        margin: 50px;
+    }
+
+    .internship {
+        grid-column: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    .internship-p {
+        grid-column: 2;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px;
+    }
+}
+
+@media (min-width:1135px) {
+    .volunteer-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        margin: 50px;
+    }
+
+    .volunteer {
+        grid-column: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    .volunteer-p {
+        grid-column: 2;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .internship-container {
+       grid-template-columns: 1fr 1fr;
+       gap: 2rem;
+       padding: 40px;
+       margin: 50px;
+       align-items: stretch;
+    }
+
+    .internship {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .internship-p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
 }
