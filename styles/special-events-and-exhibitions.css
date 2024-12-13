@@ -19,6 +19,7 @@
     border: 5px solid #000;
     border-radius: 5px;
     margin-bottom: 20px;
+    object-fit: cover;
     width: calc(100% - 10px);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -84,4 +85,112 @@
     border-radius: 5px;
     padding: 10px 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width:750px) {
+    .rocket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+        max-width: 700px;
+        width: 100%;
+    }
+    
+    .professor-grid,
+    .museum-grid,
+    .energetica-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 10px 10px 20px 10px;
+    }
+
+    .dates-1,
+    .dates-2,
+    .dates-3 {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .professor,
+    .museum-at-night,
+    .energetica-machine {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+        align-self: stretch;
+        object-fit: cover;
+    }
+
+    .professor-p,
+    .night-museum-p,
+    .energetica-p {
+        grid-column: 2;
+        grid-row: span 2;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:1000px) {
+    .professor-container,
+    .night-museum-container,
+    .energetica-container {
+        margin: 40px 80px;
+    }
+   
+    .professor-grid,
+    .museum-grid,
+    .energetica-grid {
+        gap: 3rem;
+    }
+
+    .professor-grid,
+    .museum-grid,
+    .energetica-grid {
+        padding: 30px;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .dates-1,
+    .dates-2,
+    .dates-3 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    
+    .professor,
+    .museum-at-night,
+    .energetica-machine {
+        grid-column: 2;
+        grid-row: span 2;
+    }
+
+    .professor-p,
+    .night-museum-p,
+    .energetica-p {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+
+
+
+
+
 }
