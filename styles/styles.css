@@ -249,34 +249,6 @@ footer a:focus {
     border: 2px solid #000;
 }
 
-.explore {
-    color: #F89B19;
-}
-
-.exhibitions {
-    color: #ED434C;
-}
-
-.special-events-and-exhibitions {
-    color: #7CC34A;
-}
-
-.visit {
-    color: #F89B19;
-}
-
-.get-involved {
-    color: #ED434C;
-}
-
-.contact {
-    color: #7CC34A;
-}
-
-.terms-and-conditions {
-    color: #F89B19;
-}
-
 .copyright {
     display: flex;
     justify-content: center;
