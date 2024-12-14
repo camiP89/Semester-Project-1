@@ -80,6 +80,13 @@
         margin: 30px auto;
         max-width: 700pxpx;
     }
+    
+    .support-container,
+    .volunteer-container,
+    .internship-container {
+        padding: 30px 40px;
+        margin: 30px 50px;
+    }
 }
 
 @media (min-width:875px) {
@@ -87,8 +94,8 @@
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr;
-        padding: 30px;
-        margin: 50px;
+        padding: 20px 30px;
+        margin: 30px 60px;
     }
 
     .money-jar {
@@ -118,15 +125,15 @@
 
     .volunteer-container {
         padding: 30px;
-        margin: 50px;
+        margin: 30px 60px;
     }
 
     .internship-container {
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr;
-        padding: 30px;
-        margin: 50px;
+        padding: 20px 30px;
+        margin: 30px 60px;
     }
 
     .internship {
@@ -149,12 +156,17 @@
 }
 
 @media (min-width:1135px) {
+    .support-container {
+        padding: 30px;
+        margin: 30px 70px;
+    }
+    
     .volunteer-container {
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr;
         padding: 30px;
-        margin: 50px;
+        margin: 30px 70px;
     }
 
     .volunteer {
@@ -178,7 +190,7 @@
        grid-template-columns: 1fr 1fr;
        gap: 2rem;
        padding: 40px;
-       margin: 50px;
+       margin: 30px 70px;
        align-items: stretch;
     }
 

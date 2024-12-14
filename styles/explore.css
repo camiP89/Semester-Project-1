@@ -109,193 +109,159 @@
         margin: 20px 100px 0 100px;
     }
 
-    h1 {
-        font-size: 1.8rem;
-        padding: 10px 0 10px 50px
+    .kids-grid,
+    .teachers-grid,
+    .researchers-grid {
+        padding: 20px;
+        gap: 2rem;
     }
 
-    .kids-section,
-    .teachers-section,
-    .researchers-section {
-        margin: 10px 0;
-        height: auto;
-        padding: 10px;
-    }
-
-    .kids-row-1,
-    .kids-row-2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .star-exhibition,
-    .kids-chemistry {
-        width: 30%;
-        max-width: 150px;
-        height: 150px;
-        margin: 5px;
-        object-fit: cover;
+    .kids-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(6, auto);
     }
 
     .k-p-1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        max-width: 200px;
-        height: 140px;
-        text-align: center;
+        grid-column: 1;
         padding: 15px;
+        margin: 0;
     }
 
-    
+    .star-exhibition {
+        grid-column: 2;
+        height: 225px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .kids-chemistry {
+        grid-column: span 2;
+        height: 250px;
+        object-fit: cover;
+        margin: 0;
+    }
+
     .k-p-2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        max-width: 400px;
-        height: 200px;
-        text-align: center;
-        padding: 10px;
+        grid-column: span 2;
+        margin: 0;
     }
 
     .mammoth {
-        width: 40%;
-        max-width: 400px;
+        grid-column: span 2;
         height: 200px;
         object-fit: cover;
-        margin: 10px;
+        margin: 0;
     }
 
-    .kids-row-3 {
+    .k-p-3 {
+        grid-column: 1;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .star-club {
+        grid-column: 2;
+        height: 200px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .k-p-4 {
+        grid-column: span 2;
+        margin: 0;
+    }
+
+    .k-p-1,
+    .k-p-2,
+    .k-p-3,
+    .k-p-4 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .k-p-3,
-    .k-p-4 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 35%;
-        max-width: 230px;
-        height: 370px;
-        gap: 5px;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .star-club {
-        width: 30%;
-        max-width: 230px;
-        height: 250px;
-        object-fit: cover;
-        margin: 10px;
-    }
-
-
-    .teachers-container {
+    .teachers-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 460px;
-        width: 100%;
-        gap: 15px;
-        align-items: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+
     }
 
     .school-trip {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: span 2;
         width: 100%;
-        height: 430px;
+        height: 100%;
         object-fit: cover;
+        box-sizing: border-box;
     }
 
     .t-p-1 {
         grid-column: 2;
-        grid-row: 1;
-        height: 440px;
-        display: flex;
-        text-align: justify;
-        align-items: center;
-        text-align: center;
-        padding: 0;
+        grid-row: span 2;
+        margin: 0;
     }
 
     .kids-experiment {
-        grid-column: 3;
-        grid-row: 1;
+        grid-column: 1;
+        grid-row: 3;
         width: 100%;
-        height: 180px;
+        height: 265px;
         object-fit: cover;
+        box-sizing: border-box;
     }
 
     .t-p-2 {
-        grid-column: 3;
-        grid-row: 1;
-        margin-top: 210px;
-        width: 100%;
-        max-width: 100%;
-        height: 180px;
+        grid-column: 2;
+        grid-row: 3;
+        box-sizing: border-box;
+    }
+
+    .t-p-1,
+    .t-p-2 {
         display: flex;
         text-align: justify;
         align-items: center;
-        text-align: center;
-        padding: 20px;
-        width: calc(100% - 40px);
+        padding: 30px;
     }
 
-    .researchers-container {
+    .researchers-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 460px;
-        width: 100%;
-        gap: 15px;
-        align-items: start;
-        margin: 10px 10px 20px 10px;
-        width: calc(100% - 90px);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
     }
 
     .library {
         grid-column: 1;
-        grid-row: 1;
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
+        grid-row: span 2;
+        height: 100%;
+        box-sizing: border-box;
     }
 
     .r-p-1 {
-        grid-column: 1;
-        grid-row: 1;
-        width: 100%;
-        margin-top: 220px;
-        height: 170px;
-        display: flex;
-        text-align: justify;
-        align-items: center;
-        text-align: center;
-        width: calc(100% - 60px);
+        grid-column: 2;
+        grid-row: span 2;
+        height: 100%;
+        box-sizing: border-box;
     }
 
     .researchers {
-        grid-column: 2;
-        grid-row: 1;
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
+        grid-column: 1;
+        grid-row: 3;
+        height: 100%;
+        box-sizing: border-box;
     }
 
     .r-p-2 {
-        grid-column: 3;
-        grid-row: 1;
-        width: 100%;
-        height: 390px;
-        text-align: center;
+        grid-column: 2;
+        grid-row: 3;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .r-p-1,
+    .r-p-2 {
         display: flex;
         text-align: justify;
         align-items: center;
@@ -304,189 +270,123 @@
 
 
 @media (min-width:875px) {
-    .kids-section,
-    .teachers-section,
-    .researchers-section {
-        margin: 20px 50px;
-    }
-
-    .kids-row-1,
-    .kids-row-2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .star-exhibition,
-    .kids-chemistry {
-        width: 33%;
-        max-width: 400px;
-        height: 240px;
-        margin: 10px;
-        object-fit: cover;
+    .kids-grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,auto);
+        gap: 2rem;
     }
 
     .k-p-1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 33%;
-        max-width: 400px;
-        height: 200px;
-        text-align: center;
-        padding: 20px;
-        margin: 5px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .star-exhibition {
+        grid-column: 2;
+        grid-row: 1;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .kids-chemistry {
+        grid-column: 3;
+        grid-row: 1;
     }
 
     .k-p-2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        max-width: 350px;
-        height: 240px;
-        text-align: center;
-        padding: 0 20px 0 20px;
-        margin: 10px;
+        grid-column: span 2;
+        grid-row: 2;
     }
 
     .mammoth {
-        width: 40%;
-        max-width: 350px;
-        height: 240px;
-        margin: 10px;
-        object-fit: cover;
+        grid-column: 3;
+        grid-row: 2;
     }
 
-    .kids-row-3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .k-p-3,
-    .k-p-4 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 35%;
-        max-width: 350px;
-        height: 380px;
-        text-align: center;
-        padding: 20px 20px 20px 20px;
+    .k-p-3 {
+        grid-column: 1;
+        grid-row: 3;
     }
 
     .star-club {
-        width: 30%;
-        max-width: 350px;
-        height: 420px;
-        object-fit: cover;
+        grid-column: 2;
+        grid-row: 3;
+        height: 100%;
+        box-sizing: border-box;
     }
 
-    .teachers-container {
+    .k-p-4 {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .teachers-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        height: 460px;
-        width: 100%;
-        gap: 30px;
-        align-items: start;
-        margin: 20px 20px;
-        width: calc(100% - 60px);
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+        padding: 20px;
     }
 
     .school-trip {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: span 2;
         width: 100%;
-        height: 450px;
         object-fit: cover;
     }
 
     .t-p-1 {
         grid-column: 2;
-        grid-row: 1;
-        height: 410px;
-        display: flex;
-        text-align: justify;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
+        grid-row: span 2;
     }
 
     .kids-experiment {
         grid-column: 3;
         grid-row: 1;
-        width: 100%;
-        height: 190px;
-        object-fit: cover;
-        margin-right: 5px;
+        height: 100%;
     }
 
     .t-p-2 {
         grid-column: 3;
-        grid-row: 1;
-        margin-top: 230px;
-        width: 100%;
-        display: flex;
-        text-align: justify;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        width: calc(100% - 40px);
+        grid-row: 2;
+        height: 100%;
     }
 
-    .researchers-container {
+    .researchers-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        height: 460px;
-        width: 100%;
-        align-items: stretch;
-        gap: 30px;
-        align-items: start;
-        margin: 20px 20px 30px 20px;
-        width: calc(100% - 110px);
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+        padding: 20px;
     }
 
     .library {
         grid-column: 1;
         grid-row: 1;
-        width: 100%;
-        height: 210px;
-        object-fit: cover;
+        height: 100%;
+        box-sizing: border-box;
     }
 
     .r-p-1 {
         grid-column: 1;
-        grid-row: 1;
-        width: 100%;
-        margin-top: 240px;
-        height: 150px;
-        display: flex;
-        text-align: justify;
-        align-items: center;
-        text-align: center;
-        width: calc(100% - 60px);
+        grid-row: 2;
+        height: 100%;
+        box-sizing: border-box;
     }
 
     .researchers {
         grid-column: 2;
-        grid-row: 1;
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
+        grid-row: span 2;
+        height: 100%;
+        box-sizing: border-box;
     }
 
     .r-p-2 {
         grid-column: 3;
-        grid-row: 1;
-        width: 100%;
-        max-width: 280px;
-        height: 390px;
-        text-align: center;
-        display: flex;
-        text-align: justify;
-        align-items: center;
+        grid-row: span 2;
+        height: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -498,6 +398,18 @@
     }
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -152,12 +152,19 @@
         width: 100%;
     }
 
+    .cosmo-container,
+    .evolution-container,
+    .biology-container,
+    .robotics-and-ai-container,
+    .ecology-container {
+        padding: 20px;
+        gap: 2rem;
+    }
+
    .cosmo-container {
         display: grid;
-        gap: 2rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, auto);
-        padding: 10px 10px 20px 10px;
     }
 
    .cosmos-1 {
@@ -217,10 +224,8 @@
 
    .evolution-container {
         display: grid;
-        gap: 1rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, auto);
-        padding: 10px 10px 20px 10px;
     }
 
     .evolution-man {
@@ -257,10 +262,8 @@
 
     .biology-container {
         display: grid;
-        gap: 1rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3,fr);
-        padding: 10px 10px 20px 10px;
     }
 
    .head {
@@ -315,10 +318,8 @@
 
     .robotics-and-ai-container {
         display: grid;
-        gap: 1rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, auto);
-        padding: 10px 10px 20px 10px;
     }
 
    .ai {
@@ -376,10 +377,8 @@
 
     .ecology-container {
         display: grid;
-        gap: 1rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, auto);
-        padding: 10px 10px 20px 10px;
     }
 
    .wind-turbine {
@@ -387,6 +386,7 @@
         grid-row: span 2;
         margin: 0;
         height: 100%;
+        width: 100%;
         object-fit: cover;
         box-sizing: border-box;
 

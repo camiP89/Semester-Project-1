@@ -168,8 +168,8 @@
 
 @media (min-width:600px) {
     .museum {
-        margin: 20px 50px 0 50px;
-        width: calc(100% - 100px);
+        margin: 20px 50px 0 60px;
+        width: calc(100% - 120px);
         height: 300px;
     }
 
@@ -269,14 +269,14 @@
     .museum {
         margin: 30px 150px;
         width: calc(100% - 300px);
-        height: 400px;
+        height: 600px;
     }
     
     .visit-grid {
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
-        gap: 3rem;
-        margin: 20px 150px;
+        gap: 2rem;
+        margin: 20px 50px;
     }
 
     .location-container {
