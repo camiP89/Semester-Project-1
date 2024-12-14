@@ -15,5 +15,9 @@ The website should be informative and engaging, encouraging viewers to visit the
 - HTML
 - CSS
 
+# Deployment
+
+[https://camip89.github.io/Semester-Project-1/]
+
 
 
