@@ -379,6 +379,7 @@
         grid-column: 2;
         grid-row: span 2;
         height: 100%;
+        object-fit: cover;
         box-sizing: border-box;
     }
 
@@ -391,13 +392,14 @@
 }
 
 @media (min-width:1210px) {
-    .teachers-container,
-    .researchers-container {
-        margin: 20px 70px 30px 70px;
-        width: calc(100% - 100px);
+    .kids-section,
+    .teachers-section,
+    .researchers-section {
+        margin: 30px 150px ;
+        padding: 20px 50px;
     }
 }
-}
+
 
 
 

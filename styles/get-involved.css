@@ -157,16 +157,16 @@
 
 @media (min-width:1135px) {
     .support-container {
-        padding: 30px;
-        margin: 30px 70px;
+        margin: 30px 150px ;
+        padding: 20px 50px;
     }
     
     .volunteer-container {
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr;
-        padding: 30px;
-        margin: 30px 70px;
+        margin: 30px 150px ;
+        padding: 20px 50px;
     }
 
     .volunteer {
@@ -187,11 +187,11 @@
     }
 
     .internship-container {
-       grid-template-columns: 1fr 1fr;
-       gap: 2rem;
-       padding: 40px;
-       margin: 30px 70px;
-       align-items: stretch;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: 30px 150px ;
+        padding: 20px 50px;
+        align-items: stretch;
     }
 
     .internship {

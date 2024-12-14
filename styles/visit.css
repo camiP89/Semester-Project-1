@@ -276,7 +276,8 @@
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
         gap: 2rem;
-        margin: 20px 50px;
+        margin: 30px 150px ;
+        padding: 20px 50px;
     }
 
     .location-container {
