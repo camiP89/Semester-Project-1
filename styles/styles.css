@@ -23,6 +23,7 @@ h5 {
     text-transform: uppercase;
     padding-left: 20px;
 }
+
 .free-entry {
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -138,7 +139,7 @@ nav ul li a.tour-guide {
 nav ul li:hover, 
 nav ul li:checked {
     background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
-    color: #fff;
+    color: #000;
 }
 
 .cta-container {
@@ -170,7 +171,7 @@ nav ul li:checked {
 
 .cta:hover,
 .cta:focus {
-    color: #fff;
+    color: #000;
     font-size: 1.2rem;
     background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
     transform: scale(1.05);
@@ -236,7 +237,7 @@ footer a:hover,
 footer a:focus {
     text-decoration: underline;
     background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
-    color: #fff;
+    color: #000;
     border: 2px solid #000;
 }
 
