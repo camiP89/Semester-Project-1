@@ -136,10 +136,11 @@ nav ul li a.tour-guide {
     color: #F89B19;
 }
 
-nav ul li:hover, 
-nav ul li:checked {
+nav ul li:hover {
     background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
     color: #000;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 .cta-container {
