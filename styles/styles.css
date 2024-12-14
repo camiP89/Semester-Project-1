@@ -137,7 +137,7 @@ nav ul li a.tour-guide {
 
 nav ul li:hover, 
 nav ul li:checked {
-    background-color: #00A9C2;
+    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
     color: #fff;
 }
 
@@ -172,7 +172,7 @@ nav ul li:checked {
 .cta:focus {
     color: #fff;
     font-size: 1.2rem;
-    background-color: #00A9C2;
+    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
@@ -235,7 +235,7 @@ footer a {
 footer a:hover,
 footer a:focus {
     text-decoration: underline;
-    background-color: #00A9C2;
+    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
     color: #fff;
     border: 2px solid #000;
 }
