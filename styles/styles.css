@@ -108,32 +108,39 @@ nav ul li a {
 }
 
 nav ul li a.explore {
-    color: #F89B19;
+    color: #000;
+    background-color: #F89B19;
 }
 
 nav ul li a.exhibitions {
-    color: #ED434C;
+    color: #000;
+    background-color: #ED434C;
 }
 
 nav ul li a.special-events-and-exhibitions {
-    color: #7CC34A;
+    color: #000;
+    background-color: #7CC34A;
 }
 
 nav ul li a.visit {
-    color: #F89B19;
+    background-color: #F89B19;
+    color: #000;
 }
 
 nav ul li a.get-involved {
-    color: #ED434C;
+    background-color: #ED434C;
+    color: #000;
 }
 
 nav ul li a.contact {
-    color: #7CC34A;
+    background-color: #7CC34A;
+    color: #000;
 }
 
 
 nav ul li a.tour-guide {
-    color: #F89B19;
+    background-color: #F89B19;
+    color: #000;
 }
 
 nav ul li:hover {
