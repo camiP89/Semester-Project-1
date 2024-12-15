@@ -19,9 +19,14 @@
 
 .kids-section {
     border: 10px solid #00a9c2; 
+    margin: 0px 20px;
+}
+
+.kids-section,
+.teachers-section,
+.researchers-section {
     display: flex;
     flex-direction: column;
-    margin: 0px 20px;
     border-radius: 5px;
     padding: 10px 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -29,21 +34,27 @@
 
 .teachers-section {
     border: 10px solid #ed434c; 
-    display: flex;
-    flex-direction: column;
     margin: 20px 20px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .researchers-section {
     border: 10px solid #7cc34a; 
-    display: flex;
-    flex-direction: column;
     margin: 20px 20px;
+}
+
+.k-p-1,
+.k-p-2,
+.k-p-3,
+.k-p-4,
+.t-p-1,
+.t-p-2,
+.r-p-1,
+.r-p-2  {
+    padding: 30px;
+    margin: 0 10px;
+    border: 5px solid #000;
     border-radius: 5px;
-    padding: 10px 20px;
+    margin: 0 0 15px 0;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -51,35 +62,17 @@
 .k-p-2,
 .k-p-3,
 .k-p-4 {
-    padding: 30px;
-    margin: 0 10px;
     background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
-    border: 5px solid #000;
-    border-radius: 5px;
-    margin: 0 0 15px 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .t-p-1,
 .t-p-2 {
-    padding: 30px;
-    margin: 0 10px;
     background: linear-gradient(180deg, rgba(237, 67, 76, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
-    border: 5px solid #000;
-    border-radius: 5px;
-    margin: 0 0 15px 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .r-p-1,
 .r-p-2 {
-    padding: 30px;
-    margin: 0 10px;
     background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
-    border: 5px solid #000;
-    border-radius: 5px;
-    margin: 0 0 15px 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .star-exhibition,
@@ -163,8 +156,9 @@
     .star-club {
         grid-column: 2;
         height: 200px;
-        object-fit: cover;
         margin: 0;
+        object-fit: cover;
+        box-sizing: border-box;
     }
 
     .k-p-4 {
@@ -236,6 +230,7 @@
         grid-column: 1;
         grid-row: span 2;
         height: 100%;
+        object-fit: cover;
         box-sizing: border-box;
     }
 
@@ -250,6 +245,7 @@
         grid-column: 1;
         grid-row: 3;
         height: 100%;
+        object-fit: cover;
         box-sizing: border-box;
     }
 
@@ -268,7 +264,6 @@
     }
 }
 
-
 @media (min-width:875px) {
     .kids-grid {
         display: grid;
@@ -285,6 +280,7 @@
     .star-exhibition {
         grid-column: 2;
         grid-row: 1;
+        width: 100%;
         height: 100%;
         box-sizing: border-box;
     }
@@ -312,6 +308,7 @@
     .star-club {
         grid-column: 2;
         grid-row: 3;
+        width: 100%;
         height: 100%;
         box-sizing: border-box;
     }
@@ -365,6 +362,7 @@
         grid-column: 1;
         grid-row: 1;
         height: 100%;
+        width: 100%;
         box-sizing: border-box;
     }
 
@@ -372,13 +370,13 @@
         grid-column: 1;
         grid-row: 2;
         height: 100%;
-        box-sizing: border-box;
     }
 
     .researchers {
         grid-column: 2;
         grid-row: span 2;
         height: 100%;
+        width: 100%;
         object-fit: cover;
         box-sizing: border-box;
     }

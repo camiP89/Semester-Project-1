@@ -37,54 +37,37 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.cosmo-section {
-    border: 10px solid #00a9c2; 
+.cosmo-section,
+.evolution,
+.biology,
+.robotics-and-ai,
+.ecology {
     display: flex;
     flex-direction: column;
-    margin: 0px 20px;
     border-radius: 5px;
     padding: 10px 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.evolution {
+.cosmo-section {
+    border: 10px solid #00a9c2; 
+    margin: 0px 20px;
+}
+
+.evolution,
+.ecology {
     border: 10px solid #7cc34a; 
-    display: flex;
-    flex-direction: column;
     margin: 20px 20px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .biology {
     border: 10px solid #F89B19;
-    display: flex;
-    flex-direction: column;
     margin: 20px 20px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .robotics-and-ai {
     border: 10px solid  #ed434c;
-    display: flex;
-    flex-direction: column;
     margin: 20px 20px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.ecology {
-    border: 10px solid  #7cc34a; 
-    display: flex;
-    flex-direction: column;
-    margin: 20px 20px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .cosmos-1,
@@ -99,7 +82,9 @@
 }
 
 .evolution-p-1,
-.evolution-p-2 {
+.evolution-p-2,
+.eco-p-1,
+.eco-p-2  {
     background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
     border: 4px solid #000;
     border-radius: 5px;
@@ -132,16 +117,6 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.eco-p-1,
-.eco-p-2 {
-    background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
-    padding: 30px;
-    border: 4px solid #000;
-    border-radius: 5px;
-    margin: 20px 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
 @media (min-width:600px) {
    .solar-container {
         display: flex;
@@ -161,6 +136,25 @@
         gap: 2rem;
     }
 
+    .star-constellation,
+    .globe-exhibit,
+    .big-dipper,
+    .evolution-man,
+    .dinosaur,
+    .head,
+    .heart,
+    .ai,
+    .headset,
+    .robot-hand,
+    .wind-turbine,
+    .world-in-hand,
+    .world-on-fire {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+
    .cosmo-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -176,7 +170,6 @@
    .star-constellation {
         grid-column: 2;
         grid-row: 1;
-        height: 510px;
     }
 
    .cosmos-2 {
@@ -188,13 +181,11 @@
    .globe-exhibit {
         grid-column: 1;
         grid-row: 3;
-        height: 370px;
     }
 
    .big-dipper {
         grid-column: 2;
         grid-row: 2;
-        height: 292px;
     }
 
    .big-dipper-p {
@@ -203,14 +194,17 @@
         margin: 0;
     }
 
-   img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
    .cosmos-1,
-   .cosmos-2 {
+   .cosmos-2,
+   .evolution-p-2,   
+   .bio-p-1,
+   .bio-p-2,
+   .bio-p-3,  
+   .ai-p-1,
+   .ai-p-2,
+   .ai-p-3,
+   .eco-p-1,
+   .eco-p-2 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -242,22 +236,12 @@
     .dinosaur {
         grid-column: 1;
         grid-row: 3;
-        height: 555px;
     }
 
     .evolution-p-2 {
         grid-column: 2;
         grid-row: 3;
         margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     .biology-container {
@@ -270,7 +254,6 @@
         grid-column: 1;
         grid-row: 1;
         margin: 0;
-        height: 240px;
     }
 
    .bio-p-1 {
@@ -292,7 +275,6 @@
         grid-column: 1;
         grid-row: 3;
         margin: 0;
-        height: 265px;
     }
 
    .bio-p-3 {
@@ -300,20 +282,6 @@
         grid-row: 3;
         margin: 0;
         padding: 20px;
-    }
-
-   img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .bio-p-1,
-    .bio-p-2,
-    .bio-p-3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .robotics-and-ai-container {
@@ -326,8 +294,6 @@
         grid-column: 1;
         grid-row: 1;
         margin: 0;
-        height: 190px;
-
     }
 
    .ai-p-1 {
@@ -340,7 +306,6 @@
         grid-column: 2;
         grid-row: span 2;
         margin: 0;
-        height: 400px;
     }
 
    .ai-p-2 {
@@ -361,20 +326,6 @@
         margin: 0;
     }
 
-   img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-   .ai-p-1,
-   .ai-p-2,
-   .ai-p-3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     .ecology-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -385,10 +336,6 @@
         grid-column: 1;
         grid-row: span 2;
         margin: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
 
     }
 
@@ -402,7 +349,6 @@
         grid-column: 2;
         grid-row: 1;
         margin: 0;
-        box-sizing: border-box;
     }
 
    .eco-p-2 {
@@ -416,16 +362,6 @@
         grid-column: 2;
         grid-row: 3;
         margin: 0;
-        height: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
-    }
-
-   .eco-p-1,
-   .eco-p-2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 
@@ -440,44 +376,31 @@
    .cosmos-1 {
         grid-column: 1;
         grid-row: span 2;
-        margin: 0;
    }
 
    .star-constellation {
         grid-column: 2;
         grid-row: span 2;
-        height: 715px;
    }
 
    .cosmos-2 {
         grid-column: 3;
         grid-row: 1;
-        margin: 0;
    }
 
    .globe-exhibit {
         grid-column: 3;
         grid-row: 2;
-        margin: 0;
-        height: 345px;
    }
 
    .big-dipper {
         grid-column: 4;
         grid-row: 1;
-        height: 340px;
    }
 
    .big-dipper-p {
         grid-column: 4;
         grid-row: 2;
-        margin: 0;
-   }
-
-   img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
    }
 
    .cosmos-1,
@@ -486,43 +409,33 @@
         padding: 20px;
    }
 
-   .cosmo-container p {
-        margin: 0;
-   }
-
    .evolution-container {
         display: grid;
         gap: 2.2rem;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
         padding: 10px 10px 20px 10px;
-        margin: 0;
     }
 
     .evolution-man {
         grid-column: 1;
         grid-row: 1;
-        margin: 0;
     }
 
     .evolution-p-1 {
         grid-column: 1;
         grid-row: 2;
         margin: 0;
-        align-self: stretch;
     }
 
     .dinosaur {
         grid-column: 2;
         grid-row: span 2;
-        height: 660px;
-        margin: 0;
     }
 
     .evolution-p-2 {
         grid-column: 3;
         grid-row: span 2;
-        height: 600px;
     }
 
     .evolution-p-1,
@@ -542,7 +455,6 @@
    .head {
         grid-column: 1;
         grid-row: 1;
-        height: 100%;
    }
 
    .bio-p-1 {
@@ -558,18 +470,11 @@
    .heart {
         grid-column: 3;
         grid-row: 1;
-        height: 100%;
    }
 
    .bio-p-3 {
         grid-column: 3;
         grid-row: 2;
-   }
-
-   img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
    }
 
    .bio-p-1,
@@ -591,7 +496,6 @@
     .ai {
         grid-column: 1;
         grid-row: 1;
-        height: 100%;
     }
 
     .ai-p-1 {
@@ -602,8 +506,6 @@
     .headset {
         grid-column: 2;
         grid-row: span 2;
-        height: 100%;
-        box-sizing: border-box;
     }
 
     .ai-p-2 {
@@ -619,13 +521,6 @@
     .robot-hand {
         grid-column: 4;
         grid-row: 1;
-        height: 100%;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     .ai-p-1,
@@ -667,7 +562,6 @@
     .world-on-fire {
         grid-column: 3;
         grid-row: 2;
-        margin: 0;
     }
 
     .eco-p-1,
@@ -676,16 +570,6 @@
         align-items: center;
         justify-self: stretch;
         padding: 30px;
-    }
-
-    .wind-turbine,
-    .world-in-hand,
-    .world-on-fire {
-        align-self: stretch;
-        justify-self: stretch;
-        width: 100%;
-        max-height: 100%;
-        object-fit: cover;
     }
 }
 
