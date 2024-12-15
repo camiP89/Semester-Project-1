@@ -260,7 +260,7 @@ footer a:focus {
     margin-top: 0;
 }
 
-@media (min-width: 629px) {
+@media (min-width: 685px) {
     #menu-checkbox,
     .hamburger-icon,
     .mobile-header {
