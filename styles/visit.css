@@ -1,17 +1,17 @@
 .museum {
-    width: 100%;
+    width: calc(100% - 40px);
     height: 200px;
-    max-width: 100%;
     object-fit: cover;
     border: 10px solid #ed434c;
-    box-sizing: border-box;
     border-radius: 5px;
     margin: 10px 20px;
-    width: calc(100% - 40px);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
 }
 
-.location-container {
+.location-container,
+.admission-container,
+.accessibility  {
     border: 10px solid #7cc34a; 
     border-radius: 5px;
     padding: 20px;
@@ -56,15 +56,8 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.admission-container {
-    border: 10px solid #7cc34a; 
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.tour-container {
+.tour-container,
+.museum-shop {
     border: 10px solid  #ed434c; 
     border-radius: 5px;
     padding: 20px;
@@ -97,30 +90,19 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.opening-hours p {
-    margin-bottom:  10px;
-}
-
 .opening-hours span {
     font-weight: bold;
     margin-right: 20px;
 }
 
-.accessibility {
-    border: 10px solid #7cc34a; 
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.wheelchair {
+.wheelchair,
+.food,
+.shop {
     width: 100%;
     height: auto;
     width: calc(100% - 10px);
     border: 5px solid #000;
     border-radius: 5px;
-    margin-bottom: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -132,37 +114,11 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.food {
-    width: 100%;
-    height: auto;
-    width: calc(100% - 10px);
-    border: 5px solid #000;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
 .food-p {
     padding: 20px;
     background: linear-gradient(180deg, rgba(248, 155, 25, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
     border: 5px solid #000;
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.museum-shop {
-    border: 10px solid  #ed434c; 
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.shop {
-    width: 100%;
-    height: auto;
-    border: 5px solid #000;
-    border-radius: 5px;
-    width: calc(100% - 10px);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -267,16 +223,16 @@
 
 @media (min-width: 1000px) {
     .museum {
-        margin: 30px 150px;
-        width: calc(100% - 300px);
-        height: 600px;
+        margin: 30px 200px;
+        width: calc(100% - 400px);
+        height: 500px;
+        object-fit: cover;
     }
     
     .visit-grid {
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
         gap: 2rem;
-        margin: 30px 150px ;
         padding: 20px 50px;
     }
 
@@ -314,7 +270,7 @@
 
     .food,
     .shop {
-        height: 300px;
+        height: 350px;
         object-fit: cover;
     }
 
