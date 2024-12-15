@@ -20,4 +20,11 @@ The website should be informative and engaging, encouraging viewers to visit the
 [https://camip89.github.io/Semester-Project-1/]
 
 
+# Project plan 
 
+[https://github.com/users/camiP89/projects/12]
+
+
+# Acknowledgments 
+
+Images used in this project are from unsplash and iStock. 
