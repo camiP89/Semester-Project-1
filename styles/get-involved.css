@@ -10,31 +10,26 @@
     width: calc(100% - 60px);
 }
 
-.support-container {
-    border: 10px solid #7cc34a; 
+.support-container,
+.volunteer-container,
+.internship-container {
     display: flex;
     flex-direction: column;
     margin: 20px 20px;
     border-radius: 5px;
     padding: 10px 20px;
+}
+
+.support-container {
+    border: 10px solid #7cc34a; 
 }
 
 .volunteer-container {
     border: 10px solid #ed434c; 
-    display: flex;
-    flex-direction: column;
-    margin: 20px 20px;
-    border-radius: 5px;
-    padding: 10px 20px;
 }
 
 .internship-container {
     border: 10px solid #00a9c2; 
-    display: flex;
-    flex-direction: column;
-    margin: 20px 20px;
-    border-radius: 5px;
-    padding: 10px 20px;
 }
 
 .money-jar,
@@ -47,29 +42,25 @@
     width: calc(100% - 10px);
 }
 
-.support-p {
-    background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+.support-p,
+.volunteer-p,
+.internship-p {
     padding: 30px;
     margin: 20px 0px;
     border: 5px solid #000;
     border-radius: 5px;
+}
 
+.support-p {
+    background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
 }
 
 .volunteer-p {
     background: linear-gradient(180deg, rgba(237, 67, 76, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
-    padding: 30px;
-    margin: 20px 0px;
-    border: 5px solid #000;
-    border-radius: 5px;
 }
 
 .internship-p {
-    padding: 30px;
-    margin: 20px 0px;
     background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
-    border: 5px solid #000;
-    border-radius: 5px;
 }
 
 @media (min-width:600px) {
@@ -156,11 +147,35 @@
 }
 
 @media (min-width:1135px) {
-    .support-container {
+    .support-container,
+    .volunteer-container {
         margin: 30px 150px ;
         padding: 20px 50px;
     }
     
+    .internship-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: 30px 150px ;
+        padding: 20px 50px;
+        align-items: stretch;
+    }
+
+    .internship {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .internship-p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+}
+
+@media (min-width:1300px) {
     .volunteer-container {
         display: grid;
         gap: 2rem;
@@ -184,26 +199,5 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .internship-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        margin: 30px 150px ;
-        padding: 20px 50px;
-        align-items: stretch;
-    }
-
-    .internship {
-        height: 600px;
-        object-fit: cover;
-    }
-
-    .internship-p {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px;
     }
 }
