@@ -1,10 +1,18 @@
+@import url('./variables.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .heart-hands {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 600px;
-    border: 10px solid #ed434c; 
+    border: 10px solid var(--pink); 
     border-radius: 5px;
     margin: 0px 20px;
     width: calc(100% - 60px);
@@ -21,15 +29,15 @@
 }
 
 .support-container {
-    border: 10px solid #7cc34a; 
+    border: 10px solid var(--green); 
 }
 
 .volunteer-container {
-    border: 10px solid #ed434c; 
+    border: 10px solid var(--pink); 
 }
 
 .internship-container {
-    border: 10px solid #00a9c2; 
+    border: 10px solid var(--blue); 
 }
 
 .money-jar,
@@ -37,7 +45,7 @@
 .internship {
     width: 100%;
     height: auto;
-    border: 5px solid #000;
+    border: 5px solid var(--black);
     border-radius: 5px;
     width: calc(100% - 10px);
 }
@@ -47,7 +55,7 @@
 .internship-p {
     padding: 30px;
     margin: 20px 0px;
-    border: 5px solid #000;
+    border: 5px solid var(--black);
     border-radius: 5px;
 }
 
@@ -69,7 +77,7 @@
         justify-content: center;
         align-items: center;
         margin: 30px auto;
-        max-width: 700pxpx;
+        max-width: 700px;
     }
     
     .support-container,

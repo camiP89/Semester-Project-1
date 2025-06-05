@@ -1,8 +1,16 @@
+@import url('./variables.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .museum {
     width: calc(100% - 40px);
     height: 200px;
     object-fit: cover;
-    border: 10px solid #ed434c;
+    border: 10px solid var(--pink);
     border-radius: 5px;
     margin: 10px 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -12,7 +20,7 @@
 .location-container,
 .admission-container,
 .accessibility  {
-    border: 10px solid #7cc34a; 
+    border: 10px solid var(--green); 
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
@@ -24,7 +32,7 @@
 .accessibility-p {
     padding: 20px;
     background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
-    border: 5px solid #000;
+    border: 5px solid var(--black);
     border-radius: 5px;
     font-weight: 600;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -33,7 +41,7 @@
 .map-container {
     height: auto;
     max-width: 100%;
-    border: 5px solid #000;
+    border: 5px solid var(--black);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -51,14 +59,14 @@
     height: auto;
     margin: 20px;
     width: calc(100% - 60px);
-    border: 10px solid #f89b19;
+    border: 10px solid var(--orange);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .tour-container,
 .museum-shop {
-    border: 10px solid  #ed434c; 
+    border: 10px solid  var(--pink); 
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
@@ -69,13 +77,13 @@
 .shop-p {
     padding: 20px;
     background: linear-gradient(180deg, rgba(237, 67, 76, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
-    border: 5px solid #000;
+    border: 5px solid var(--black);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .opening-hours {
-    border: 10px solid  #00A9C2; 
+    border: 10px solid var(--blue); 
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
@@ -85,7 +93,7 @@
 .hours {
     padding: 20px;
     background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
-    border: 5px solid #000;
+    border: 5px solid var(--black);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -101,13 +109,13 @@
     width: 100%;
     height: auto;
     width: calc(100% - 10px);
-    border: 5px solid #000;
+    border: 5px solid var(--black);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .food-and-drink {
-    border: 10px solid #f89b19;
+    border: 10px solid var(--orange);
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
@@ -117,7 +125,7 @@
 .food-p {
     padding: 20px;
     background: linear-gradient(180deg, rgba(248, 155, 25, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
-    border: 5px solid #000;
+    border: 5px solid var(--black);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }

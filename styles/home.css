@@ -1,8 +1,16 @@
+@import url('./variables.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .dino-homepage {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 10px solid #f89b19;
+    border: 10px solid var(--orange);
     max-width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -10,7 +18,7 @@
 }
 
 .welcome {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -23,7 +31,7 @@
 }
 
 .come-join-container {
-    border: 10px solid #00a9c2;
+    border: 10px solid var(--blue);
 }
 
 .come-join-container,
@@ -44,7 +52,7 @@
 .the-aim  {
     padding: 30px;
     margin: 10px;
-    border: 3px solid #000;
+    border: 3px solid var(--black);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -58,7 +66,7 @@
 }
 
 .exhibition-room {
-    border: 10px solid #ed434c;
+    border: 10px solid var(--pink);
 }
 
 .exhibition-room,
@@ -88,11 +96,11 @@
 }
 
 .globe {
-    border: 10px solid #00a9c2;
+    border: 10px solid var(--blue);
 }
 
 .the-aim-container {
-    border: 10px solid #f89b19;
+    border: 10px solid var(--orange);
 }
 
 .the-aim {
@@ -114,23 +122,23 @@
 }
 
 .explore-container {
-    border: 10px solid #00a9c2; 
+    border: 10px solid var(--blue); 
 }
 
 .exhibition-container {
-    border: 10px solid #7cc34a;
+    border: 10px solid var(--green);
 }
 
 .special-events-container {
-    border: 10px solid #ed434c;
+    border: 10px solid var(--pink);
 }
 
 .visit-container {
-    border: 10px solid #7cc34a;
+    border: 10px solid var(--green);
 }
 
 .get-involved-container {
-    border: 10px solid #00a9c2; 
+    border: 10px solid var(--blue); 
 }
 
 .explore-bullets,
@@ -140,7 +148,7 @@
 .get-involved-bullets {
     padding: 30px;
     margin: 10px;
-    border: 3px solid #000;
+    border: 3px solid var(--black);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -166,7 +174,7 @@
 }
 
 .color-display {
-    border: 10px solid #f89b19;
+    border: 10px solid var(--orange);
 }
 
 .color-display-container {

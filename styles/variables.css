@@ -5,4 +5,8 @@
     --blue: #00adc2;
     --white: #fff;
     --black: #000;
+    --fade-green: rgba(124, 195, 74, 0.30);
+    --fade-pink: rgba(237, 67, 76, 0.30);
+    --fade-blue: rgba(0, 169, 194, 0.30);
+    --fade-orange: rgba(248, 155, 25, 0.30);
 }
