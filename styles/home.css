@@ -177,6 +177,14 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.explore-bullets li,
+.exhibition-bullets li,
+.special-events-bullets li,
+.visit-bullets li,
+.get-involved-bullets li {
+    margin-left: 20px;
+}
+
 .explore-bullets {
     background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
 }
