@@ -2,8 +2,7 @@
 
 ![A screenshot of the homepage of my Semester Project 1](images/semster-project-1-screenshot.jpg)
 
-
-### The website created for Semester Project 1 - Community Science Museum. Design an engaging, informative, and user friendly website for a new interactive science museum opening in your city.
+ The website created for Semester Project 1 - Community Science Museum. An engaging, informative, and user friendly website for a new interactive science museum opening in the city.
 
 # Description:
 
@@ -16,6 +15,7 @@ The website is a static site built using HTML and CSS, with an emphasis on acces
 
 - HTML 
 - CSS
+- JS (Added a contact.mjs to ensure all fields in the contact form are filled out.)
 
 ## Getting Started 
 
