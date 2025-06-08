@@ -9,4 +9,9 @@
     --fade-pink: rgba(237, 67, 76, 0.30);
     --fade-blue: rgba(0, 169, 194, 0.30);
     --fade-orange: rgba(248, 155, 25, 0.30);
+    --shadow: rgba(0, 0, 0, 0.25);
+    --gradient-blue: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
+    --gradient-green: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    --gradient-pink: linear-gradient(180deg, rgba(237, 67, 76, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    --gradient-orange: linear-gradient(180deg, rgba(248, 155, 25, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
 }

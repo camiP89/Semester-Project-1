@@ -4,18 +4,18 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .heart-hands {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     max-width: 600px;
     border: 10px solid var(--pink); 
     border-radius: 5px;
-    margin: 0px 20px;
-    width: calc(100% - 60px);
+    margin: 20px auto;
+    width: calc(100% - 40px);
 }
 
 .support-container,
@@ -23,7 +23,7 @@
 .internship-container {
     display: flex;
     flex-direction: column;
-    margin: 20px 20px;
+    margin: 20px;
     border-radius: 5px;
     padding: 10px 20px;
 }
@@ -47,7 +47,6 @@
     height: auto;
     border: 5px solid var(--black);
     border-radius: 5px;
-    width: calc(100% - 10px);
 }
 
 .support-p,
@@ -60,22 +59,19 @@
 }
 
 .support-p {
-    background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    background: var(--gradient-green);
 }
 
 .volunteer-p {
-    background: linear-gradient(180deg, rgba(237, 67, 76, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    background: var(--gradient-pink);
 }
 
 .internship-p {
-    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
+    background: var(--gradient-blue);
 }
 
 @media (min-width:600px) {
     .heart-hands {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 30px auto;
         max-width: 700px;
     }
@@ -89,7 +85,8 @@
 }
 
 @media (min-width:875px) {
-    .support-container {
+    .support-container,
+    .internship-container {
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr;
@@ -97,15 +94,16 @@
         margin: 30px 60px;
     }
 
-    .money-jar {
+    .money-jar,
+    .internship {
         grid-column: 1;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        box-sizing: border-box;
     }
 
-    .support-p {
+    .support-p,
+    .internship-p {
         grid-column: 2;
         margin: 0;
         display: flex;
@@ -125,32 +123,6 @@
     .volunteer-container {
         padding: 30px;
         margin: 30px 60px;
-    }
-
-    .internship-container {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 1fr 1fr;
-        padding: 20px 30px;
-        margin: 30px 60px;
-    }
-
-    .internship {
-        grid-column: 1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
-    }
-
-    .internship-p {
-        grid-column: 2;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 40px;
     }
 }
 
@@ -197,7 +169,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        box-sizing: border-box;
     }
 
     .volunteer-p {

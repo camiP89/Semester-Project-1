@@ -4,6 +4,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -20,7 +21,6 @@ h1 {
     background: linear-gradient(90deg, #F89B19 15.1%, #FFF 100%);
     border-bottom: 5px solid var(--black);
     padding: 5px 0 5px 20px;
-    margin-top: 0 5px 0 5px;
 }
 
 h2,
@@ -29,7 +29,7 @@ h4,
 h5 {
     font-size: 1.2rem;
     text-transform: uppercase;
-    padding-left: 20px;
+    padding: 10px;
 }
 
 .free-entry {
@@ -38,14 +38,13 @@ h5 {
     font-weight: 700;
     color: var(--pink);
     text-align: center;
+    padding: 10px;
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
     border-bottom: 5px solid var(--black);
-    max-width: 100%;
-    margin: 0;
 }
 
 .logo-link {
@@ -84,7 +83,6 @@ nav,
 header {
     position: relative;
     font-size: 2.3rem;
-    font-family: "Atma", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -154,7 +152,7 @@ nav ul li a.tour-guide {
 }
 
 nav ul li:hover {
-    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
+    background: var(--gradient-blue);
     color: var(--black);
     transform: scale(1.05);
     transition: all 0.3s ease;
@@ -163,6 +161,7 @@ nav ul li:hover {
 nav ul li:hover a {
     color: var(--black);
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .cta-container {
@@ -186,7 +185,7 @@ nav ul li:hover a {
     border: 4px solid var(--black);
     border-radius: 5px;
     padding: 5px 10px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
     cursor: pointer;
 }
 
@@ -194,7 +193,7 @@ nav ul li:hover a {
 .cta:focus {
     color: #000;
     font-size: 1.2rem;
-    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
+    background: var(--gradient-blue);
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
@@ -221,7 +220,6 @@ nav ul li:hover a {
 
 .museum-details,
 .footer-links {
-    font-family: "Atma", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--black);
@@ -231,10 +229,6 @@ nav ul li:hover a {
     display: flex;
     flex-direction: column;
     margin: 30px 0 20px 0;
-}
-
-.museum-details p {
-    line-height: 0;
 }
 
 footer a {
@@ -259,7 +253,7 @@ footer a {
 footer a:hover,
 footer a:focus {
     text-decoration: underline;
-    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
+    background: var(--gradient-blue);
     color: var(--black);
     border: 2px solid var(--black);
 }

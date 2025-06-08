@@ -4,6 +4,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .world-container {    
@@ -11,7 +12,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 20px;
+    margin: 20px;
     width: calc(100% - 40px);
 }
 
@@ -20,9 +21,8 @@
     height: auto;
     max-width: 100%;
     border: 10px solid var(--green);
-    box-sizing: border-box;
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .kids-section {
@@ -37,7 +37,7 @@
     flex-direction: column;
     border-radius: 5px;
     padding: 10px 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .teachers-section {
@@ -59,28 +59,27 @@
 .r-p-1,
 .r-p-2  {
     padding: 30px;
-    margin: 0 10px;
     border: 5px solid var(--black);
     border-radius: 5px;
     margin: 0 0 15px 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .k-p-1,
 .k-p-2,
 .k-p-3,
 .k-p-4 {
-    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
+    background: var(--gradient-blue);
 }
 
 .t-p-1,
 .t-p-2 {
-    background: linear-gradient(180deg, rgba(237, 67, 76, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    background: var(--gradient-pink);
 }
 
 .r-p-1,
 .r-p-2 {
-    background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    background: var(--gradient-green);
 }
 
 .star-exhibition,
@@ -99,11 +98,10 @@
     border: 5px solid var(--black);
     border-radius: 5px;
     margin-bottom: 15px;
-    width: calc(100% - 10px);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
-@media (min-width:600px) {
+@media (min-width:600px) {    
     .world {
         width: 100%;
         max-width: 860px;
@@ -129,18 +127,22 @@
         margin: 0;
     }
 
+    .star-exhibition,
+    .kids-chemistry,
+    .mammoth,
+    .star-club {
+        object-fit: cover;
+        margin: 0;
+    }
+
     .star-exhibition {
         grid-column: 2;
         height: 225px;
-        object-fit: cover;
-        margin: 0;
     }
 
     .kids-chemistry {
         grid-column: span 2;
         height: 250px;
-        object-fit: cover;
-        margin: 0;
     }
 
     .k-p-2 {
@@ -151,8 +153,6 @@
     .mammoth {
         grid-column: span 2;
         height: 200px;
-        object-fit: cover;
-        margin: 0;
     }
 
     .k-p-3 {
@@ -164,9 +164,6 @@
     .star-club {
         grid-column: 2;
         height: 200px;
-        margin: 0;
-        object-fit: cover;
-        box-sizing: border-box;
     }
 
     .k-p-4 {
@@ -177,7 +174,11 @@
     .k-p-1,
     .k-p-2,
     .k-p-3,
-    .k-p-4 {
+    .k-p-4,
+    .t-p-1,
+    .t-p-2,
+    .r-p-1,
+    .r-p-2 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -187,16 +188,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 1fr;
-
     }
+
+    .school-trip,
+    .kids-experiment,
+    .library,
+    .researchers {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
 
     .school-trip {
         grid-column: 1;
         grid-row: span 2;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
     }
 
     .t-p-1 {
@@ -208,24 +214,12 @@
     .kids-experiment {
         grid-column: 1;
         grid-row: 3;
-        width: 100%;
-        height: 265px;
-        object-fit: cover;
-        box-sizing: border-box;
     }
 
     .t-p-2 {
         grid-column: 2;
         grid-row: 3;
-        box-sizing: border-box;
-    }
-
-    .t-p-1,
-    .t-p-2 {
-        display: flex;
-        text-align: justify;
-        align-items: center;
-        padding: 30px;
+        height: 100%;
     }
 
     .researchers-grid {
@@ -237,47 +231,30 @@
     .library {
         grid-column: 1;
         grid-row: span 2;
-        height: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
     }
 
     .r-p-1 {
         grid-column: 2;
         grid-row: span 2;
         height: 100%;
-        box-sizing: border-box;
     }
 
     .researchers {
         grid-column: 1;
         grid-row: 3;
-        height: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
     }
 
     .r-p-2 {
         grid-column: 2;
         grid-row: 3;
         height: 100%;
-        box-sizing: border-box;
-    }
-
-    .r-p-1,
-    .r-p-2 {
-        display: flex;
-        text-align: justify;
-        align-items: center;
     }
 }
 
 @media (min-width:875px) {
     .kids-grid {
-        display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(3,auto);
-        gap: 2rem;
     }
 
     .k-p-1 {
@@ -290,7 +267,6 @@
         grid-row: 1;
         width: 100%;
         height: 100%;
-        box-sizing: border-box;
     }
 
     .kids-chemistry {
@@ -318,7 +294,6 @@
         grid-row: 3;
         width: 100%;
         height: 100%;
-        box-sizing: border-box;
     }
 
     .k-p-4 {
@@ -326,19 +301,15 @@
         grid-row: 3;
     }
 
-    .teachers-grid {
-        display: grid;
+    .teachers-grid,
+    .researchers-grid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 2rem;
-        padding: 20px;
     }
 
     .school-trip {
         grid-column: 1;
         grid-row: span 2;
-        width: 100%;
-        object-fit: cover;
     }
 
     .t-p-1 {
@@ -349,7 +320,6 @@
     .kids-experiment {
         grid-column: 3;
         grid-row: 1;
-        height: 100%;
     }
 
     .t-p-2 {
@@ -358,42 +328,24 @@
         height: 100%;
     }
 
-    .researchers-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 2rem;
-        padding: 20px;
-    }
-
     .library {
         grid-column: 1;
         grid-row: 1;
-        height: 100%;
-        width: 100%;
-        box-sizing: border-box;
     }
 
     .r-p-1 {
         grid-column: 1;
         grid-row: 2;
-        height: 100%;
     }
 
     .researchers {
         grid-column: 2;
         grid-row: span 2;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
     }
 
     .r-p-2 {
         grid-column: 3;
         grid-row: span 2;
-        height: 100%;
-        box-sizing: border-box;
     }
 }
 
@@ -401,7 +353,7 @@
     .kids-section,
     .teachers-section,
     .researchers-section {
-        margin: 30px 150px ;
+        margin: 30px 150px;
         padding: 20px 50px;
     }
 }

@@ -4,6 +4,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .museum {
@@ -12,9 +13,8 @@
     object-fit: cover;
     border: 10px solid var(--pink);
     border-radius: 5px;
-    margin: 10px 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    box-sizing: border-box;
+    margin: 20px;
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .location-container,
@@ -24,18 +24,19 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .location-info-container,
 .free-for-all,
 .accessibility-p {
     padding: 20px;
-    background: linear-gradient(180deg, rgba(124, 195, 74, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    background: var(--gradient-green);
     border: 5px solid var(--black);
     border-radius: 5px;
     font-weight: 600;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
+    margin-bottom: 20px;
 }
 
 .map-container {
@@ -43,7 +44,7 @@
     max-width: 100%;
     border: 5px solid var(--black);
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .map-container iframe {
@@ -55,13 +56,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: auto;
     margin: 20px;
-    width: calc(100% - 60px);
+    width: calc(100% - 40px);
     border: 10px solid var(--orange);
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .tour-container,
@@ -70,16 +70,16 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .tour-p,
 .shop-p {
     padding: 20px;
-    background: linear-gradient(180deg, rgba(237, 67, 76, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    background: var(--gradient-pink);
     border: 5px solid var(--black);
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .opening-hours {
@@ -87,15 +87,15 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .hours {
     padding: 20px;
-    background: linear-gradient(180deg, rgba(0, 169, 194, 0.50) 0%, #FFF 100%);
+    background: var(--gradient-blue);
     border: 5px solid var(--black);
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .opening-hours span {
@@ -108,10 +108,10 @@
 .shop {
     width: 100%;
     height: auto;
-    width: calc(100% - 10px);
     border: 5px solid var(--black);
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .food-and-drink {
@@ -119,7 +119,7 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .food-p {
@@ -127,19 +127,19 @@
     background: linear-gradient(180deg, rgba(248, 155, 25, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
     border: 5px solid var(--black);
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 @media (min-width:600px) {
     .museum {
-        margin: 20px 50px 0 60px;
-        width: calc(100% - 120px);
+        margin: 20px 50px 0 50px;
+        width: calc(100% - 100px);
         height: 300px;
     }
 
     .exhibition-visit {
         margin: 20px 50px;
-        width: calc(100% - 120px);
+        width: calc(100% - 100px);
     }
 
     .location-container,
@@ -156,7 +156,7 @@
 
 @media (min-width: 875px) {
     .museum {
-        margin: 0px 150px;
+        margin: 20px 150px;
         width: calc(100% - 300px);
         height: 400px;
     }
@@ -190,13 +190,11 @@
         width: 100%;
         height: 545px;
         object-fit: cover;
-        box-sizing: border-box;
     }
 
     .admission-container {
         margin: 0;
         width: 100%;
-        box-sizing: border-box;
     }
 
     .tour-container {
@@ -229,7 +227,7 @@
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
     .museum {
         margin: 30px 200px;
         width: calc(100% - 400px);
@@ -242,6 +240,7 @@
         grid-template-rows: repeat(3, auto);
         gap: 2rem;
         padding: 20px 50px;
+        margin: 30px 150px ;
     }
 
     .location-container {
